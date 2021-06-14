@@ -1,0 +1,39 @@
+.btn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    height: 40px;
+    background-color: #333;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
+    width: 100%;
+}
+button:hover {
+    cursor: pointer;
+    background: #a64bf4;
+    background: -webkit-linear-gradient(45deg,#00dbde,#fc00ff);
+    background: -o-linear-gradient(45deg,#00dbde,#fc00ff);
+    background: -moz-linear-gradient(45deg,#00dbde,#fc00ff);
+    background: linear-gradient(45deg,#00dbde,#fc00ff);
+}
+.loginIn {
+    margin-bottom: 10px;
+}
+@media screen and (min-device-width: 3840px) {
+
+    .btn {
+        height: 100px !important;
+        font-size: 2rem !important;
+    }
+}

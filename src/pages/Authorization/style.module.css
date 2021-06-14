@@ -1,0 +1,126 @@
+.Auth {
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.Auth a {
+    text-decoration: none;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #cdcdcd;
+    border-radius: 5px;
+    background-color: white;
+    width: 300px;
+    -webkit-box-shadow: -2px 1px 16px 0px rgba(50, 50, 50, 0.56);
+    -moz-box-shadow:    -2px 1px 16px 0px rgba(50, 50, 50, 0.56);
+    box-shadow:         -2px 1px 16px 0px rgba(50, 50, 50, 0.56);
+}
+@media screen and (min-device-width: 3840px) {
+    .form {
+        width: 1000px;
+    }
+    input, .signUp {
+        height: 100px !important;
+        font-size: 2rem !important;
+    }
+    .check {
+        width: 60px !important;
+        height: 60px !important;
+        font-size: 2rem !important;
+    }
+    .labelCheckbox {
+        font-size: 1.8rem !important;
+        margin-left: -560px !important;;
+    }
+    .forgotLink a {
+        font-size: 1.8rem !important;
+    }
+}
+.form input {
+    margin-bottom: 10px;
+    height: 40px;
+    padding-left: 10px;
+    border: 1px solid #cdcdcd;
+    border-radius: 5px;
+    outline: none;
+    color: #654b4b;
+}
+
+.boxChecked {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+    padding-bottom: 24px;
+}
+.check {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #cdcdcd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #827ffe;
+    font-size: 0.9rem;
+    border-radius: 3px;
+}
+.check:hover {
+    cursor: pointer;
+}
+.labelCheckbox {
+    font-family: Ubuntu-Regular;
+    color: #999;
+    margin-left: -63px;
+}
+.forgotLink a {
+    font-family: Ubuntu-Regular;
+    font-size: 16px;
+    color: #827ffe;
+    text-decoration: none;
+}
+.forgotLink a:hover {
+    color: #6360d6;
+}
+.attention {
+    border: 2px solid red !important;
+    outline: none;
+    animation: attention 1.2s;
+}
+.borderRed {
+    border: 2px solid red !important;
+}
+@keyframes attention {
+    0%, 50%, 100% {
+        transform: translateX(0px);
+    }
+    10%, 30% {
+        transform: translateX(10px);
+    }
+    20%, 40% {
+        transform: translateX(-10px);
+    }
+}
+.signUp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    height: 40px;
+    background-color: #333;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    transition: all .4s;
+    width: 100%;
+}

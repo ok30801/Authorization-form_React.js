@@ -1,0 +1,11 @@
+{
+  "users": [
+    {
+      "name": "Лена",
+      "phone": "+7 999 999 99 99",
+      "password": "1234567890",
+      "avatar": "http://res.cloudinary.com/dfqwdsocn/image/upload/v1623418561/q7rt9s6l/n429th28vdbdizhaaqls.jpg",
+      "id": 1
+    }
+  ]
+}

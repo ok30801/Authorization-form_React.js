@@ -1,0 +1,78 @@
+.Modal {
+    width: 500px;
+    position: absolute;
+    display: none;
+}
+
+.Modal__wrap {
+    border: 1px solid #e1dada;
+    padding: 25px 30px 10px 30px;
+    border-radius: 5px;
+    background: #fffefe;
+    box-shadow: 2px 4px 20px -4px rgb(0 0 0 / 10%);
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #636161;
+}
+.Modal__close {
+    cursor: pointer;
+    font-size: 2rem;
+    color: #726767;
+    width: 100%;
+    text-align: end;
+}
+.Modal__close:hover {
+    color: #827a7a;
+    transition: 0.2s;
+}
+.Modal__title {
+    width: 100%;
+    text-align: start;
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+.Modal input {
+    width: 100%;
+    height: 60px;
+    padding-left: 10px;
+    border: 1px solid #cdcdcd;
+    border-radius: 5px;
+    outline: none;
+    color: #654b4b;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+.Modal__phone {
+    width: 100%;
+    text-align: start;
+    margin-bottom: 25px;
+}
+.btn {
+   width: 100%;
+}
+.show {
+    display: block;
+}
+.attention {
+    border: 2px solid red !important;
+    outline: none;
+    animation: attention 1.2s;
+}
+.borderRed {
+    border: 2px solid red !important;
+}
+
+@keyframes attention {
+    0%, 50%, 100% {
+        transform: translateX(0px);
+    }
+    10%, 30% {
+        transform: translateX(10px);
+    }
+    20%, 40% {
+        transform: translateX(-10px);
+    }
+}

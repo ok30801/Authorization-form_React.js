@@ -1,0 +1,88 @@
+.RecoveryPassword {
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #cdcdcd;
+    border-radius: 5px;
+    background-color: white;
+    width: 300px;
+    -webkit-box-shadow: -2px 1px 16px 0px rgba(50, 50, 50, 0.56);
+    -moz-box-shadow:    -2px 1px 16px 0px rgba(50, 50, 50, 0.56);
+    box-shadow:         -2px 1px 16px 0px rgba(50, 50, 50, 0.56);
+}
+.form input {
+    margin-bottom: 10px;
+    height: 40px;
+    padding-left: 10px;
+    border: 1px solid #cdcdcd;
+    border-radius: 5px;
+    outline: none;
+    color: #654b4b;
+}
+@media screen and (min-device-width: 3840px) {
+    .form {
+        width: 1000px;
+    }
+    input {
+        height: 100px !important;
+        font-size: 2rem !important;
+    }
+    .blockLink a {
+        font-size: 1.8rem !important;
+    }
+}
+.boxChecked {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+    padding-bottom: 24px;
+}
+.forgotLink a {
+    font-family: Ubuntu-Regular;
+    font-size: 16px;
+    color: #999;
+    text-decoration: none;
+}
+.forgotLink a:hover {
+    color: #6360d6;
+}
+.blockLink {
+    display: flex;
+    justify-content: space-between;
+}
+.attention {
+    border: 2px solid red !important;
+    outline: none;
+    animation: attention 1.2s;
+}
+.borderRed {
+    border: 2px solid red !important;
+}
+
+@keyframes attention {
+    0%, 50%, 100% {
+        transform: translateX(0px);
+    }
+    10%, 30% {
+        transform: translateX(10px);
+    }
+    20%, 40% {
+        transform: translateX(-10px);
+    }
+}
+
+
+
