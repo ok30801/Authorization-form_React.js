@@ -68,7 +68,7 @@ export default function registrationReducer(state = initialState, action) {
                 password: stateCopy.inputPassword,
                 avatar: stateCopy.avatar
             }
-            axios.post('http://localhost:3005/users', registrationData)
+            axios.post('http://localhost:3001/users', registrationData)
             return stateCopy
         }
         default:

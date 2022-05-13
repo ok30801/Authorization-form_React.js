@@ -46,7 +46,7 @@ export const errorAC = (value) => {
 
 export const getUsers = () => {
     return dispatch => {
-        axios.get('http://localhost:3005/users')
+        axios.get('http://localhost:3001/users')
             .then(response => response.data)
             .then(data => dispatch(getUsersAC(data)))
             .catch(error => dispatch(errorAC(error)))
